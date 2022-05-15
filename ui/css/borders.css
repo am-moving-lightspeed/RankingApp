@@ -1,0 +1,37 @@
+/* General */
+.b-1px-s {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--clr-border);
+}
+
+/* Raduis */
+.br-50per {
+  border-radius: 50%;
+}
+
+/* Top left radius */
+.btlr-34px {
+  border-radius: 34px;
+}
+.btlr-50per {
+  border-top-left-radius: 50%;
+}
+
+/* Top right radius */
+.btrr-50per {
+  border-top-right-radius: 50%;
+}
+
+/* Bottom left radius */
+.bblr-34px {
+  border-radius: 34px;
+}
+.bblr-50per {
+  border-bottom-left-radius: 50%;
+}
+
+/* Bottom right radius */
+.bbrr-50per {
+  border-bottom-right-radius: 50%;
+}
