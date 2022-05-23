@@ -11,18 +11,14 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>ranking-app-impl</artifactId>
-  <name>ranking-app :: impl</name>
+  <groupId>org.bsuir.ranking-app.ranking</groupId>
+  <artifactId>ranking-app-ranking</artifactId>
+  <name>ranking-app :: ranking</name>
+  <packaging>pom</packaging>
 
-  <dependencies>
-    <dependency>
-      <groupId>org.bsuir.ranking-app.ranking</groupId>
-      <artifactId>ranking-app-ranking-core</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.bsuir.ranking-app.web</groupId>
-      <artifactId>ranking-app-web</artifactId>
-    </dependency>
-  </dependencies>
+  <modules>
+    <module>api</module>
+    <module>core</module>
+  </modules>
 
 </project>

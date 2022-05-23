@@ -1,0 +1,47 @@
+/* Articles */
+.articles-container {
+  padding: 0 15%;
+
+  width: 100%;
+  height: auto;
+}
+
+.article-card {
+  margin-bottom: 80px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-card__meta {
+  flex: 0 1 35%;
+  text-align: right;
+}
+
+.meta__title {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.meta__authors {
+  margin-bottom: 5px;
+}
+
+.meta__venue-year {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.meta__rating {
+  ;
+}
+
+.article-card__content {
+  flex: 0 1 63%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content__heading {
+  text-align: center;
+}

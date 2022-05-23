@@ -6,14 +6,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <artifactId>ranking-app</artifactId>
-    <groupId>org.bsuir.ranking-app</groupId>
+    <artifactId>ranking-app-ranking</artifactId>
+    <groupId>org.bsuir.ranking-app.ranking</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>org.bsuir.ranking-app.web</groupId>
-  <artifactId>ranking-app-web</artifactId>
-  <name>ranking-app :: web</name>
+  <artifactId>ranking-app-ranking-core</artifactId>
+  <name>ranking-app :: ranking :: core</name>
 
   <dependencies>
     <dependency>
@@ -21,16 +20,12 @@
       <artifactId>spring-boot-starter-data-neo4j</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-security</artifactId>
+      <groupId>org.neo4j</groupId>
+      <artifactId>neo4j-ogm-bolt-driver</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-thymeleaf</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-web</artifactId>
+      <groupId>org.bsuir.ranking-app.ranking</groupId>
+      <artifactId>ranking-app-ranking-api</artifactId>
     </dependency>
   </dependencies>
 

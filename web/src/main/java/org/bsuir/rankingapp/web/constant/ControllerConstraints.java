@@ -5,11 +5,10 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public class ControllerConstraints {
 
-  // URI.
-  public static final String GLOBAL_PAGE = "/g";
+  // URI
   public static final String SEARCH_PAGE = "/search";
   public static final String SEARCH_RESULT_PAGE = "/gs";
 
-  // Parameters' names.
+  // Parameters' names
   public static final String SEARCH_PARAM = "q";
 }
