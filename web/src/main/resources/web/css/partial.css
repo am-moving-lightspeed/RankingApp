@@ -1,3 +1,37 @@
+/* Background */
+.bg-bot-inclined,
+.bg-top-inclined {
+  position: relative;
+  z-index: -10;
+  overflow-x: hidden;
+}
+
+.bg-bot-inclined::after,
+.bg-top-inclined::before {
+  display: block;
+  position: absolute;
+  left: 0;
+  z-index: -5;
+
+  width: 150%;
+  height: 20%;
+
+  content: "";
+
+  transform: rotate(-5deg);
+  transform-origin: left bottom;
+}
+
+.bg-bot-inclined::after {
+  /* Should be the same as .bg-bot-inclined::after { height } */
+  bottom: -20%;
+}
+
+.bg-top-inclined::before {
+  top: 0;
+}
+
+
 /* Text */
 .lspacing-0-2em {
   letter-spacing: .2em;

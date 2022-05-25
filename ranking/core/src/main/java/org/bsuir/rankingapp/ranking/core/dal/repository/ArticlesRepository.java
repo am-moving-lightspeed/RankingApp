@@ -15,6 +15,6 @@ public interface ArticlesRepository extends Neo4jRepository<Article, String> {
       + " RETURN art, rels,  authors"
       + " ORDER BY art.pageRank"
       + " LIMIT {0}")
-  List<Article> getTopArticlesByPageRankLimitBy(Long limit, Pageable pageable);
+  List<Article> getTopArticlesByPageRankLimitBy(Long limit);
   
 }

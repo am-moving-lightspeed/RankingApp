@@ -16,9 +16,16 @@ public class ResourceService {
 
   @Value("${stylesheets.root}")
   private String stylesheetsRoot;
+  @Value("${javascript.root}")
+  private String javascriptRoot;
 
   public Resource getStylesheetResource(String resourceName) {
     var fullName = String.format("%s/%s", stylesheetsRoot, resourceName);
+    return resourceLoader.getResource(fullName);
+  }
+
+  public Resource getJavaScriptResource(String resourceName) {
+    var fullName = String.format("%s/%s", javascriptRoot, resourceName);
     return resourceLoader.getResource(fullName);
   }
 }

@@ -5,7 +5,6 @@ import static org.bsuir.rankingapp.ranking.core.config.Relationship.HAS_ANNOTATE
 import static org.bsuir.rankingapp.ranking.core.config.Relationship.REFERENCES;
 import static org.neo4j.ogm.annotation.Relationship.INCOMING;
 
-import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.Set;
 import lombok.AllArgsConstructor;
@@ -30,7 +29,9 @@ public class Article {
   private String title;
 
   @Property(name = "abstract")
-  private String content;
+  private String about;
+
+  private String venue;
 
   private Integer year;
 

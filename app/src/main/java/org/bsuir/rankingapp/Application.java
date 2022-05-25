@@ -15,6 +15,6 @@ public class Application {
     var ctx = SpringApplication.run(Application.class, args);
 
     var repo = ctx.getBean(ArticlesRepository.class);
-    System.out.println(repo.getTopArticlesByPageRankLimitBy(10L));
+//    System.out.println(repo.getTopArticlesByPageRankLimitBy(10L));
   }
 }

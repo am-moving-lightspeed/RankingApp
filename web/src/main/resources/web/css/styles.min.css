@@ -2,6 +2,7 @@
 @import "./var.css";
 @import "./borders.css";
 @import "./dimensions.css";
+@import "./form.css";
 @import "./header.css";
 @import "./partial.css";
 
@@ -21,32 +22,14 @@
 }
 
 body {
+  position: relative;
   width: 100%;
   height: 100vh;
-
-  background: var(--clr-primary);
-  overflow-x: hidden;
 }
 
-body::before {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-
-  width: 150%;
-  height: 82%;
-
-  content: "";
-  background: var(--clr-secondary);
-
-  transform: rotate(-5deg);
-  transform-origin: left bottom;
-}
 
 /* Headings */
-h1 {
+h1, h2 {
   text-align: center;
 }
 h1::after {
@@ -60,4 +43,14 @@ h1::after {
 
   content: "";
   background: var(--clr-text-regular);
+}
+h2 {
+  margin: 0 auto 50px;
+}
+
+
+/* General styles */
+#main-container {
+  width: 100%;
+  height: 100%;
 }

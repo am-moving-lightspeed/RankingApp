@@ -1,8 +1,9 @@
 nav {
   --header-max-height: 80px;
 
-  position: absolute;
   display: flex;
+  position: absolute;
+  z-index: 5000;
 
   width: 100%;
   max-height: var(--header-max-height);

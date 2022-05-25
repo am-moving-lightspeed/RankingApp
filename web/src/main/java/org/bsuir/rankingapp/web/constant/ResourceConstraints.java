@@ -6,4 +6,5 @@ import lombok.experimental.UtilityClass;
 public class ResourceConstraints {
 
   public static final String TEXT_CSS = "text/css";
+  public static final String APPLICATION_JAVASCRIPT = "application/javascript";
 }

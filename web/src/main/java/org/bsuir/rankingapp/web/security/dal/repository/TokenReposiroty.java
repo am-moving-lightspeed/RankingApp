@@ -9,5 +9,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface TokenReposiroty extends Neo4jRepository<BasicAuthToken, String> {
 
-  Optional<BasicAuthToken> getToken(String token);
+//  Optional<BasicAuthToken> getToken(String token);
 }
