@@ -7,7 +7,7 @@
 })()
 
 function inflateArticles(request) {
-  let container = document.getElementById("main-container");
+  let container = document.getElementById("articles");
   let parsedElements = parseHtmlStringToDom(request.responseText,
       "article-card");
   for (let element of parsedElements) {

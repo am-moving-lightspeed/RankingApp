@@ -37,4 +37,10 @@ public class HomeController {
     headers.setContentType(MediaType.TEXT_HTML);
     return new ResponseEntity<>(body, headers, HttpStatus.OK);
   }
+
+  @ResponseBody
+  @GetMapping("g:get-authors")
+  public ResponseEntity<String> getAuthors() {
+    return null;
+  }
 }

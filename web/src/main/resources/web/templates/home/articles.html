@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.thymeleaf.org">
+
+<div class="pt-200px">
+  <h1>Популярное</h1>
+  <div class="articles-container mt-100px">
+    <th:block th:each="article : ${articles}">
+      <div class="article-card" th:fragment="articleCard()">
+        <div class="article-card__meta">
+          <div class="meta__title" th:text="${article.title}">Title</div>
+          <div class="meta__authors" th:text="${article.authors}">Authors</div>
+          <div class="meta__venue-year" th:text="${article.venueAndYear}">Venue, year</div>
+        </div>
+        <div class="article-card__content" th:text="${article.about}"></div>
+      </div>
+    </th:block>
+  </div>
+</div>
+
+</html>

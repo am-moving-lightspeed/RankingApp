@@ -19,5 +19,7 @@ public class Author {
   @Id
   private String name;
 
+  private Double personalRank;
+
   private Set<String> nameVariants = new HashSet<>();
 }
